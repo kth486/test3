@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일본 여행 가이드 - 10606 김태호</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-size: 24px; /* 폰트 사이즈 조정 */
+      font-weight: bold; /* 폰트 굵기 조정 */
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      margin-bottom: 30px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .bg-light {
+      background-color: #f8f9fa !important;
+    }
+    .bg-primary {
+      background-color: #007bff !important;
+      color: white;
+    }
+    .bg-secondary {
+      background-color: #6c757d !important;
+      color: white;
+    }
+    .bg-success {
+      background-color: #28a745 !important;
+      color: white;
+    }
+    .bg-info {
+      background-color: #17a2b8 !important;
+      color: white;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .carousel-inner img,
+    .attraction-item img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .attraction-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn-details {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 내비게이션 바 - 항목을 변경하거나 추가할 수 있습니다 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">중국 여행 가이드 - 10606 김태호</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#overview">개요</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">중국역사 알려드릴게요~~~</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#attractions">유명한 관광지는 어디일까요~~~?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">여행 팁 알려드릴게요~~~~~</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 개요 섹션 -->
+  <section id="overview" class="section bg-primary">
+    <div class="container">
+      <h2 class="text-center">개요</h2>
+      <p>
+
+중국은 아시아 대륙에서 가장 큰 국가로, 다양한 역사와 문화를 자랑하는 나라입니다. 중국의 수도는 베이징(北京)이며, 인구는 세계에서 가장 많은 국가 중 하나입니다. 중국은 56개의 다양한 민족 그룹으로 구성되어 있으며, 각각이 고유한 문화와 전통을 가지고 있습니다.	.</p>
+      <!-- 이미지 슬라이드 - 이미지를 변경하려면 src 속성 값을 수정하세요 -->
+      <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/chinayou.jpg" class="d-block w-100" alt="문화유산에는 산시성, 진시왕릉, 만리장성 등이 있다.">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/chinafood.jpg" class="d-block w-100" alt="음식에는 마라탕, 훠궈 등이 있다.">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/chinapeople.jpg" class="d-block w-100" alt="인구는 전세계 2위로 13억명이다.">
+         
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#overviewCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">이전</span>
+        </a>
+        <a class="carousel-control-next" href="#overviewCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">다음</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 역사 섹션 -->
+  <section id="history" class="section bg-secondary">
+    <div class="container">
+      <h2 class="text-center">역사</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/chinahistory.gif" alt="중국 역사 1" class="img-fluid">
+            <p>중국은 하-상-주-춘추전국시대-진-한-위진남북조-수-당-송-원-명-청 순서의 시대가 있다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/chinawar.jpg" alt="중국 역사 2" class="img-fluid">
+            <p>중국은 한국과 병자호란이라는 전쟁을 한적있다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/chinalang.jpg" alt="일본 역사 3" class="img-fluid">
+            <p>중국이 처음 사용한 한자는 6000년의 역사가 있다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 역사 1 -->
+  <div class="modal fade" id="historyModal1" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel1">역사 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_history1.jpeg" alt="일본 역사 1" class="img-fluid">
+          <p>중국은 굉장히 긴 역사를 가지고 있는 만큼 많은 시대를 가지고있습니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 2 -->
+  <div class="modal fade" id="historyModal2" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel2">역사 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_history2.jpeg" alt="일본 역사 2" class="img-fluid">
+          <p>중국과 한국은 지리적으로 가까운 위치여서 중국과 여러 전쟁을 했었고 그중 청나라가 조선을 침략한 병자호란이 대표적입니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 3 -->
+  <div class="modal fade" id="historyModal3" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel3">역사 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_history3.jpeg" alt="일본 역사 3" class="img-fluid">
+          <p>한자는 중국이 처음 사용한 문자로 그역사가 무려 6000년이나 됩니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 관광지 섹션 -->
+  <section id="attractions" class="section bg-success">
+    <div class="container">
+      <h2 class="text-center">관광지</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/chinaman.jpg" alt="만리장성" class="img-fluid">
+            <p>중국의 대표적인 관광지 만리장성입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/chinajin.jpg" alt="진시왕릉" class="img-fluid">
+            <p>진시왕의 무덤입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/chinaja.jpg" alt="자금성" class="img-fluid">
+            <p>자금성은 중국의 대표적인 성들중 하나입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 관광지 1 -->
+  <div class="modal fade" id="attractionModal1" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel1">관광지1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_attraction1.jpeg" alt="만리장성" class="img-fluid">
+          <p>만리장성은 중국의 대표적인 성벽으로, 흉노족이나 몽골족과 같은 북방 유목민족의 침략을 막기 위해 전국시대부터 건설이 시작되어 후대 왕조에 의해 확장, 보수되어 온 인류 최대의 성곽 구조물입니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 2 -->
+  <div class="modal fade" id="attractionModal2" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel2">관광지2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_attraction2.jpeg" alt="진시왕릉" class="img-fluid">
+          <p>진시황릉은 중국의 산시성의 시안시 린퉁구에 소재한 진시황의 능입니다. 능 주변에서 병사와 말 등을 조각한 토용(테라코타 모형)인 병마용이 발굴된 것으로도 유명합니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 3 -->
+  <div class="modal fade" id="attractionModal3" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel3">관광지 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/japan_attraction3.jpeg" alt="자금성" class="img-fluid">
+          <p>자금성 또는 중국 국내 명칭인 고궁은 중국 베이징시 둥청구에 위치한 궁궐로, 현존하는 궁궐 가운데 가장 규모가 큽니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 여행 팁 섹션 -->
+  <section id="tips" class="section bg-info">
+    <div class="container">
+      <h2 class="text-center">여행 팁</h2>
+      <ul>
+        <li>방문하기 좋은 시기: 봄에는 그나마 황사와 미세먼지가 덜한 4~5월과 가을날씨인 9~11월 시기에 중국 여행을 계획하시는 것을 추천해요.</li>
+        <li>언어: 중국어는 보통화, 국어, 한어, 간체자, 중문, 화문등 민족에 따라 조금씩 언어가 다릅니다. 하지만 보통은 표준중국어인 베이징 관화를 씁니다.</li>
+        <li>통화: 중국 위안..</li>
+        <li>교통: 중국은 기차, 버스, 지하철 등 광범위한 교통망을 자랑합니다.</li>
+      </ul>
+      <div class="text-center">
+        <!-- 여기에 YouTube 동영상 링크를 추가하세요 -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y9SC4Jf0ayo?si=i2BmsK501kUlnXZx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+  </section>
+
+  <footer class="text-center">
+    <p>&copy; 2024 일본 여행 가이드. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
